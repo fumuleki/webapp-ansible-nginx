@@ -1,5 +1,5 @@
 # ansible-installer-serveur nginx
-Cet outil a pour but d'automatiser certaines tâches sur des installations de serveur web.
+Cet outil a pour but d'automatiser certaines tâches sur l'installation de serveurs web(HTTP) nginx sur nos 2 nodes distant.
 # Pré-requis
 Vous aurez besoin d'un accès SSH sur les cibles
 # Installation

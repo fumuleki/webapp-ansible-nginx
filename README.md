@@ -1,7 +1,7 @@
 # ansible-installer-serveur nginx
+Il s'agit d'un projet d'automatisation certaines tâches pour l'installation de serveurs web (HTTP) nginx sur nos 2 serveurs distants.
 Ansible est un outil d'automatisation informatique. Il peut configurer des systèmes, déployer des logiciels et orchestrer des tâches informatiques plus avancées telles que des déploiements continus ou des mises à jour progressives sans temps d'arrêt. Ansible gère les machines sans agent. Il n'est jamais question de savoir comment mettre à niveau les démons distants ou de ne pas pouvoir gérer les systèmes parce que les démons sont désinstallés.
 
-Cet outil a pour but d'automatiser certaines tâches pour l'installation de serveurs web(HTTP) nginx sur nos 2 serveurs distant.
 # Pré-requis
     - 3 vm Centos8: 1 vm master ansible et 2 vm clients
     - Vous aurez besoin d'un accès SSH sur les cibles

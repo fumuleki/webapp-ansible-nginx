@@ -12,38 +12,42 @@ OpenSSH est l'un des composants open source les plus évalués par les pairs, l'
     - yum install ansible -y
 # Configuration
 vous devez créer l'inventaire et playbook
-  - [linux]
-  - 192.168.0.46
-  - 192.168.0.47
- 
-  - [linux:vars]
-  - ansible_user=root
-  - ansible_password=root
+    
+    - [linux]
+    - 192.168.0.46
+    - 192.168.0.47
+   
+    - [linux:vars]
+    - ansible_user=root
+    - ansible_password=root
  
 # créez un playbook format yaml.
 Ansible playbooks sont écrits en utilisant le langage yaml donc créez un fichier .yml ou une extension yaml
-  - vi nginx-install.yml
+
+    - vi nginx-install.yml
 
 Les fichiers yaml commencent éventuellement par trois tirets (---)
 La prochaine ligne immédiate commence par un seul tiret (-)
 Le nom est facultatif ici les hosts attendent une valeur comme all ou group.
 
-  - (---)
-  - (-)name: nginx install & start services
-  - hosts: all
+    - (---)
+    - (-)name: nginx install & start services
+    - hosts: all
   
-Voulez-vous devenir un utilisateur root sur le serveur target become 
-  - become: true
+Voulez-vous devenir un utilisateur root sur le serveur target become
+
+    - become: true
 
 quelle action souhaitez-vous effectuer? spécifiez sous les tâches que nous utilisons ce playbook pour installer nginx
 quel est le module pour installer nginx
-  - tasks:
-  - name: install nginx
-  - yum:
-  - name: nginx
-  - state: latest
-  - service:
-  - name: nginx
-  - start: started
-  - 
+
+    - tasks:
+    - name: install nginx
+    - yum:
+    - name: nginx
+    - state: latest
+    - service:
+    - name: nginx
+    - start: started
+  
 

@@ -1,4 +1,4 @@
-# ansible-installer-serveur nginx
+# ansible-installer-serveur web nginx
 Il s'agit d'un projet d'automatisation certaines tâches pour l'installation de serveurs web (HTTP) nginx sur nos 2 serveurs distants.
 Ansible est un outil d'automatisation informatique. Il peut configurer des systèmes, déployer des logiciels et orchestrer des tâches informatiques plus avancées telles que des déploiements continus ou des mises à jour progressives sans temps d'arrêt. Ansible gère les machines sans agent. Il n'est jamais question de savoir comment mettre à niveau les démons distants ou de ne pas pouvoir gérer les systèmes parce que les démons sont désinstallés.
 

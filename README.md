@@ -23,10 +23,13 @@ Ansible playbooks sont écrits en utilisant le langage yaml donc créez un fichi
  - vi nginx-install.yml
 Les fichiers yaml commencent éventuellement par trois tirets (---)
 La prochaine ligne immédiate commence par un seul tiret (-),Le nom est facultatif ici, les hosts attendent une valeur comme all ou group.
+
    - (-)name: nginx install & start services
    - hosts: all
+  
 Voulez-vous devenir un utilisateur root sur le serveur target become 
-  - become: true .
+  - become: true
+
 quelle action souhaitez-vous effectuer? spécifiez sous les tâches que nous utilisons ce playbook pour installer nginx
 quel est le module pour installer nginx
   - tasks:
